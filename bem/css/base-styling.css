@@ -1,0 +1,79 @@
+*{
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: calc(18rem / 16);
+}
+
+body{
+    margin: 0;
+    color: var(--text-primary);
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-size: 4.375rem;
+}
+h2{
+    font-size: 2.25rem;
+}
+h3{
+    font-size: 1.75rem;
+}
+h4{
+    font-size: 1.25rem;
+}
+h5{
+    font-size: 1.125rem;
+}
+h6{
+    font-size: 0.875rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+.button{
+    display: inline-block;
+    border-radius: 3px;
+    padding: 5px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.button.button--lg{
+    padding: 10px 40px;;
+}
+
+.button.button--primary{
+    color: var(--color-primary);
+    transition-duration: 300ms;
+    border: 1px solid var(--color-primary);
+}
+.button.button--primary:hover{
+    background-color: var(--color-primary);
+    color: #fff;
+}
+
+.button.button--secondary{
+    transition-duration: 300ms;
+    border: 1px solid #fff;
+    background-color: var(--color-primary);
+    color: #fff;
+}
+.button.button--secondary:hover{
+    color: var(--color-primary);
+    background-color: #fff;
+}
+
+@media all and (max-width: 767px){
+    .button.button--lg{
+        padding: 10px 15px;;
+    }
+}

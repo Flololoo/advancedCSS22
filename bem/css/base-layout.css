@@ -1,0 +1,21 @@
+*, :after, :before{
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    max-width: 1440px;
+    padding-left: 7px;
+    padding-right: 7px;
+    margin: auto;
+}
+
+.content-group{
+    margin-bottom: 3rem;
+}
+
+@media all and (max-width: 767px){
+    .content-group{
+        margin-bottom: 2rem;
+    }
+}

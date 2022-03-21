@@ -1,0 +1,29 @@
+.hero-area{
+    position: relative;
+}
+
+.hero-area__headline, .hero-area__subheadline{
+    color: #fff;
+}
+
+.hero-area__text{
+    position: absolute;
+    top: 10%;
+    left: 0;
+    right: 0;
+}
+
+.hero-area__img{
+    filter: sepia(50%) saturate(80%);
+}
+
+@media all and (max-width: 767px){
+    .hero-area__headline{
+        font-size: calc(30rem / 16);
+        max-width: 90%;
+
+    }
+    .hero-area__subheadline{
+        display: none;
+    }
+}

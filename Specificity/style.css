@@ -1,0 +1,22 @@
+h1{
+    color: blue;
+}
+#headline-id{
+    color: orange;
+}
+.headline-class.headline-class{
+    color: purple;
+}
+.headline-class{
+    color: green;
+}
+*{
+    color: darkgray !important;
+}
+#headline-id:hover{
+    color: gold;
+}
+
+h1{
+    color: sienna;
+}

@@ -1,0 +1,79 @@
+.phone-teasers{
+    display: flex;
+}
+
+.phone-teasers__small{
+    width: 33.33%;
+    padding: 0 7px;
+}
+
+.phone-teasers__large{
+    width: 66.66%;
+    padding: 0 7px;
+}
+
+.phone-teasers__img{
+    transform: scale(.9);
+    transition-duration: 300ms;
+}
+
+.phone-teasers__element{
+    background-color: var(--color-gray);
+    border-radius: 20px;
+}
+
+.phone-teasers__element:hover .phone-teasers__img{
+    transform: scale(.7) translateY(-50px);
+    transition-duration: 300ms;
+}
+
+.phone-teasers .phone-teasers__element:nth-child(n+2){
+    margin-top: 10px;
+}
+
+.phone-teasers__info{
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    transition-duration: 300ms;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.phone-teasers__element:hover .phone-teasers__info{
+    opacity: 1;
+}
+.phone-teasers__large .phone-teasers__info{
+    bottom: 30px;
+}
+
+.phone-teasers__title{
+    margin-bottom: 10px;
+}
+
+
+@media all and (max-width: 767px){
+    .phone-teasers{
+        display: block;
+    }
+    .phone-teasers__small, .phone-teasers__large{
+        width: 100%;
+        padding: 0;
+    }
+    .phone-teasers .phone-teasers__element:nth-child(n){
+        margin-top: 10px;
+    }
+    .phone-teasers__info{
+        opacity: 1;
+    }
+    .phone-teasers__img{
+        transform: scale(.6) translateY(-30px);
+    }
+    .phone-teasers__large .phone-teasers__info{
+        bottom: 10px;
+    }
+}

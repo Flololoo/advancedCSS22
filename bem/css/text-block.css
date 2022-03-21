@@ -1,0 +1,9 @@
+.text-block{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 30px;
+}
+
+.text-block__headline{
+    text-align: center;
+}
