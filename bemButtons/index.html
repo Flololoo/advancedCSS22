@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        .button {
+            box-sizing: border-box;
+            text-transform: uppercase;
+            border: none;
+            padding: 10px;
+            font-size: 1.5rem;
+            color: #666363;
+            background-color: #eee;
+            border-radius: 5px;
+            display: block;
+            margin: 10px 0;
+        }
+
+        .button--large {
+            font-size: 2rem;
+            padding: 15px;
+        }
+
+        .button--red {
+            background-color: #ee0000;
+            color: #fff;
+        }
+        .button--red .button__price {
+            background-color: #b20303;
+            color: #ea8787;
+        }
+
+        .button--blue {
+            background-color: #0000ee;
+            color: #fff;
+        }
+        .button--blue .button__price {
+            background-color: #01019d;
+            color: #9797ea;
+        }
+
+        .button--green {
+            background-color: #007700;
+            color: #fff;
+        }
+        .button--green .button__price {
+            background-color: #014401;
+            color: #3acc3a;
+        }
+
+
+        .button__price {
+            padding: 5px 10px;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            opacity: .8;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+<button class="button">standard button</button>
+<button class="button button--large button--red"><span class="button__price">$3</span>big button</button>
+<button class="button button--large button--blue"><span class="button__price">$4</span>big button</button>
+<button class="button button--large button--green"><span class="button__price">$9</span>big button</button>
+</body>
+</html>
