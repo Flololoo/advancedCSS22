@@ -1,0 +1,81 @@
+:root {
+    --text: #17171a;
+    --background: #ffffff;
+    --button-color: #ffe7ff;
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text: #ffffff;
+        --background: #17171a;
+        --button-color: #5d4b5d;
+    }
+}
+
+* {
+    color: var(--text);
+}
+body {
+    background-color: var(--background);
+}
+
+.large {
+    width: 100%;
+}
+.medium {
+    max-width: 700px;
+}
+.small {
+    max-width: 500px
+}
+
+.card {
+    border: 1px solid var(--text);
+    container: inline-size / card-wrapper;
+    margin: 10px;
+    padding: 10px;
+}
+p {
+    margin: 0;
+}
+button {
+    border-radius: 0;
+    border: unset;
+    padding: 10px 15px;
+    background-color: var(--button-color);
+    margin-top: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.card__image img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+}
+button {
+    display: flex;
+    align-items: center;
+}
+button img {
+    width: 20px;
+    margin-right: 10px;
+    display: none;
+}
+
+@container card-wrapper size(min-width: 500px) {
+    button img {
+        display: inherit;
+    }
+}
+
+@container card-wrapper size(min-width: 700px) {
+    .card-content {
+        display: flex;
+    }
+    .card__image {
+        margin-right: 20px;
+    }
+    .card__image img {
+        max-width: 200px;
+        min-width: 200px;
+    }
+}
