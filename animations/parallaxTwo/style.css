@@ -1,0 +1,22 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.color-block{
+    height: 1200px;
+    background-color: papayawhip;
+    position: relative;
+    z-index: 1;
+}
+.img-block{
+    height: 600px;
+    background-color: transparent;
+}
+
+.img{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: auto;
+}

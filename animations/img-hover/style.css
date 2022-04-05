@@ -1,0 +1,141 @@
+body{
+    font-family: sans-serif;
+    line-height: 1;
+}
+
+.container{
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.img-frame{
+    margin: 30px;
+    padding: 10px;
+    background-color: #ffe0bf;
+}
+.img-container{
+    overflow: hidden;
+    position: relative;
+    height: 200px;
+}
+
+.mask__headline{
+    padding-bottom: 5px;
+    border-bottom: 1px solid #d08f42;
+    margin: 50px 90px 20px;
+    display: block;
+    text-transform: uppercase;
+}
+.mask__text{
+    padding: 0 50px;
+    margin: 20px 0;
+}
+.mask__link{
+    display: block;
+    text-decoration: none;
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    margin: 0 90px;
+}
+
+.image__one .animation{
+    transition: 500ms linear;
+}
+.image__one .img-container:hover .animation{
+    transform: scale(3);
+}
+
+.image__one .mask{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #e8c6a1;
+    text-align: center;
+    opacity: 0;
+    transition-delay: 200ms;
+    transition-duration: 500ms;
+}
+
+.image__one .img-container:hover .mask{
+    opacity: 1;
+}
+.image__one .img-container:hover .mask__headline,
+.image__one .img-container:hover .mask__text,
+.image__one .img-container:hover .mask__link{
+    transform: scale(1);
+}
+
+.image__one .mask__headline{
+    transition-duration: 500ms;
+    transition-delay: 200ms;
+    transform: scale(0);
+}
+.image__one .mask__text{
+    transition-duration: 500ms;
+    transition-delay: 200ms;
+    transform: scale(0);
+}
+.image__one .mask__link{
+    transition-duration: 500ms;
+    transition-delay: 200ms;
+    transform: scale(0);
+}
+
+
+
+
+.image__two .mask{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #e8c6a1;
+    text-align: center;
+    opacity: 0;
+    transition: all 500ms ease;
+}
+.image__two .img-container:hover .mask{
+    opacity: 1;
+}
+.image__two .mask__content{
+    transform: translateX(-100%);
+    transition: all 500ms cubic-bezier(0.25, 0.1, 0.25, 1.42);
+}
+.image__two .img-container:hover .mask__content{
+    transform: translateX(0);
+}
+
+
+
+.image__three .mask{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #e8c6a1;
+    opacity: 0;
+    text-align: center;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.image__three .img-container:hover .mask{
+    opacity: 1;
+}
+.image__three .mask__content{
+    transform: rotate(0) scale(10);
+    opacity: 0;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.image__three .img-container:hover .mask__content{
+    transform: rotate(1080deg) scale(1);
+    opacity: 1;
+}
